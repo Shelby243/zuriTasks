@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  height: 600px;
+  width: 500px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: black;
+  display: flex;
+  flex-direction: column;
+}
+#profile-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.element {
+  margin: 20px;
+  font-size: 18px;
+}

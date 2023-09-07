@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Informations</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Personal Details</h1>
+      <p class="element" data-testid="slackUserName">
+        Slack Name: <b>Thomy Lowe</b>
+      </p>
+      <p class="element">Slack Display Picture</p>
+      <img
+        src="/image/IMG_1171.jpeg"
+        alt="thomylowe66"
+        id="profile-image"
+        data-testid="slackDisplayImage"
+      />
+      <p class="element" data-testid="currentDayOfTheWeek"></p>
+      <p class="element" data-testid="currentUTCTime"></p>
+      <p class="element" data-testid="myTrack">Track: <b>Frontend</b></p>
+      <p class="element">
+        GitHub:
+        <a
+          href="https://github.com/your-username/your-repo"
+          data-testid="githubURL"
+          >https://github.com/your-username/your-repo</a
+        >
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
