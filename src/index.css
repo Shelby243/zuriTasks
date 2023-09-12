@@ -8,12 +8,29 @@
 
   /*  color-scheme: light dark;*/
   color: rgba(255, 255, 255, 0.87);
-
+  --grey-400: #829ab1;
+  --primary-500: #be123c;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 2s linear infinite;
+}
+.loading-center {
+  margin: 0 auto;
 }
 
 /*body {

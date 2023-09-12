@@ -1,11 +1,19 @@
-import { Header, FeaturedMovie, Footer } from "./section";
+import HomePage from "./pages/HomePage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { MovieDetails } from "./components";
+
+const router = createBrowserRouter([
+  {
+    index: true,
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/movies/:movie_id",
+    element: <MovieDetails />,
+  },
+]);
 const App = () => {
-  return (
-    <div className="flex flex-col min-h-screen ">
-      <Header />
-      <FeaturedMovie />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 export default App;
