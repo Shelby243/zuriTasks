@@ -1,0 +1,4 @@
+[[redirects]]
+    from="/"
+    to = "/movies/:movie_id"
+    status = 200
