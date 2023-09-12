@@ -1,4 +1,3 @@
-import logo from "../assets/images/tv.png";
 import menu from "../assets/images/Menu alt 4.svg";
 import { FaSearch } from "react-icons/fa";
 import { AppContext } from "../context/appContext";
@@ -8,7 +7,11 @@ const NavBar = () => {
   return (
     <nav className="p-2 px-4 md:px-20   w-full h-20 items-center justify-between flex flex-row ">
       <div className="items-center justify-between gap-x-2 md:gap-x-5 flex flex-row  ">
-        <img src={logo} className="w-8 h-8 md:w-10 md:h-10 z-40" alt="" />
+        <img
+          src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550416/Zuri/tv_ulwgde.png"
+          className="w-8 h-8 md:w-10 md:h-10 z-40"
+          alt=""
+        />
         <p className="text-white text-xl hidden  md:hidden lg:block md:text-2xl font-bold leading-normal">
           Movie Box
         </p>

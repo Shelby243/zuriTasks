@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <section className="h-[600px] relative bg-[rgba(0,0,0,.1)]  ">
       <img
-        src="/src/assets/images/Poster.png"
+        src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550292/Zuri/Poster_hv3jsb.png"
         alt=""
         className="w-full h-full
     object-cover  absolute mix-blend-overlay "
@@ -18,14 +18,17 @@ const Header = () => {
           <div className=" w-[101px] md:w-[121px] lg:w-[141px] h-[17px] left-0 top-0 absolute justify-start items-center gap-2.5 inline-flex ">
             <img
               className="w-[35px] h-[17px] "
-              src="/src/assets/images/imdb.png"
+              src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550535/Zuri/imdb_baofyp.png"
             />
             <p className="text-white text-xs md:text-sm lg:text-base font-normal leading-3">
               86.0/100
             </p>
           </div>
           <div className="w-[49px] md:w-[69px] lg:w-[89px] h-[17px] left-[135px] top-0 absolute justify-start items-center gap-2.5 inline-flex">
-            <img className="w-4 h-[17px]" src="/src/assets/images/apple.png" />
+            <img
+              className="w-4 h-[17px]"
+              src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550644/Zuri/apple_yl0deu.png"
+            />
             <div className="text-white text-xs md:text-sm lg:text-base font-normal leading-3">
               97%
             </div>
