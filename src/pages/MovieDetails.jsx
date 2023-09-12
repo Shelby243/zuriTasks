@@ -2,21 +2,41 @@ import { fetchSingleMovie } from "../api/data";
 import { useParams } from "react-router-dom";
 import { FaPlayCircle } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState({});
 
   const { movie_id } = useParams();
-  //console.log(movie_id);
   const fetchMovie = async () => {
     const movie = await fetchSingleMovie(movie_id);
-    console.log(movie);
     setMovieDetails(movie);
   };
   useEffect(() => {
     fetchMovie();
   }, []);
-
-  console.log(movieDetails.data);
+  if (movieDetails?.message) {
+    return (
+      <main className=" text-center flex items-center justify-center ">
+        <div>
+          <img
+            src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694553223/Zuri/undraw_No_data_re_kwbl_aqbnhe.png"
+            alt="not-found"
+            className=" max-w-[600px] block mb-[2rem]  "
+          />
+          <h1 className="text-8xl text-[#BE123C] leading-normal"> 404</h1>
+          <h1 className="mb-[0.5rem] text-3xl text-black leading-normal">
+            Ohhh! Wahallah
+          </h1>
+          <p className=" mt-0 mb-[0.5rem] text-5xl text-gray-800 ">
+            {movieDetails.message}
+          </p>
+          <Link to="/" className="text-[#BE123C] text-2xl underline capitalize">
+            Back Home
+          </Link>
+        </div>
+      </main>
+    );
+  }
   return (
     <section className="px-4 md:px-20 p-5 pt-5">
       <div className=" w-full min-h-[690px] border border-gray-400 bg-gray-400 pt-2 rounded-md flex flex-col md:flex-row justify-between items-center px-4 md:px-40 ">

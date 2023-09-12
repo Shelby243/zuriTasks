@@ -11,7 +11,6 @@ const HomePage = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const fecthMovies = async () => {
     const movies = await fetchTopMovies();
-    console.log(movies);
     setValues(movies);
   };
 
@@ -39,7 +38,6 @@ const HomePage = () => {
 
     searchMovieByTitle();
   }, [search, values]);
-  console.log(results.length);
   return (
     <AppContext.Provider
       value={{

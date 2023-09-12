@@ -17,7 +17,6 @@ const FeaturedMovie = () => {
   if (isLoading) {
     return <Loading center />;
   }
-  console.log(results);
   if (results[0]?.message) {
     return (
       <section className="px-4 md:px-20 p-5 pt-10 md:pt-20">

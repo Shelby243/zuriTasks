@@ -1,6 +1,5 @@
 import MovieCard from "./MovieCard";
 import NavBar from "./NavBar";
 import Loading from "./Loading";
-import MovieDetails from "./MovieDetails";
-
-export { MovieCard, NavBar, MovieDetails, Loading };
+import ErrorPage from "./ErrorPage";
+export { MovieCard, NavBar, Loading, ErrorPage };

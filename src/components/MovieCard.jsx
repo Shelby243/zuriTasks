@@ -59,14 +59,17 @@ const MovieCard = ({
         <div className="justify-start items-center gap-2.5 flex">
           <img
             className="w-[35px] h-[17px] "
-            src="/src/assets/images/imdb.png"
+            src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550535/Zuri/imdb_baofyp.png"
           />
           <div className="text-gray-900 text-xs font-normal leading-3">
             86.0 / 100
           </div>
         </div>
         <div className="justify-start items-center gap-2.5 flex">
-          <img className="w-4 h-[17px] " src="/src/assets/images/apple.png" />
+          <img
+            className="w-4 h-[17px] "
+            src="https://res.cloudinary.com/dluwcubyw/image/upload/v1694550535/Zuri/imdb_baofyp.png"
+          />
           <div className="text-gray-900 text-xs font-normal leading-3">
             {" "}
             97%{" "}
