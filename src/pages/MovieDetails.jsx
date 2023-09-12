@@ -55,14 +55,12 @@ const MovieDetails = () => {
             className="text-black text-lg md:text-2xl"
             data-testid="movie-title"
           >
-            <b>Tilte:</b> {movieDetails.data?.original_title}
+            {movieDetails.data?.original_title}
           </h1>
           <p className="text-black text-base" data-testid="movie-release-date">
-            <b>Release date:</b>
             {movieDetails.data?.release_date}
           </p>
           <p className="text-black text-base" data-testid="movie-runtime">
-            <b>Runtime:</b>
             {movieDetails.data?.runtime} minutes
           </p>
           <div className="relative flex items-center mt-3 md:mt-0">
